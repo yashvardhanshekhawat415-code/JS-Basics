@@ -45,6 +45,6 @@ console.log(anotherstr);
 console.log(ex2.repeat(2));
 console.log("q ".repeat(5));
 //padStart and padEnd
-console.log(ex1.padStart('15' , 'l'));
-console.log("25".padStart("5", "0")); //00025 useful of IDs
-console.log("Arjun".padEnd("8", "."));
+console.log(ex1.padStart(15 , 'l'));
+console.log("25".padStart(5, "0")); //00025 useful of IDs
+console.log("Arjun".padEnd(8, "."));

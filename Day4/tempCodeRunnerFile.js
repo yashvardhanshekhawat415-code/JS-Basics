@@ -1,4 +1,3 @@
-let sent = "the quick brown fox";
-let arr = sent.split(" ");
-console.log(arr);
-console.log(arr.length);
+const jojo = ["jonathan", "jotaro","father pucci", "dio brando", "mohammad avdol"];
+jojo.length = 2
+console.log(jojo)
