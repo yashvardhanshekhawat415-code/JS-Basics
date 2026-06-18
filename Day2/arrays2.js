@@ -1,27 +1,22 @@
-const array = [1,2,3,4,5];
-let size = array.length;
-array.pop();// removes the last element from array
-console.log(array);
-let x = array.pop();// it also stores the deleted element
-console.log(x);
-console.log(size);// 5 as it was stored earlier and does not update automatically
-console.log(array.at(0));
-console.log(array);
-//pushing element 
-array.push(5);
-console.log(array);
-let push = array.push(5);
-console.log(push);// return the length of array after pushing 5
-//shift
-array.shift();
-console.log(array);
-let shift = array.shift();
-console.log(shift);//returns the shifted element of element deleted from start
-//unshift
-array.unshift("Arjun");
-console.log(array);
-let unshift = array.unshift("Karan");
-console.log(unshift);//returns length after unshifting
-console.log(array);
+const arr = [1,2,3,4,5];
+//array methods
+//push(elemnet to be added)---> add element at the end
+arr.push(6)
+//arr.push("Arjun")
+console.log(arr)
+//pop()---> removes element from the back
+arr.pop()
+console.log(arr)
 
+//unshift(element)--->adds the element at the start of teh array
+arr.unshift(0)
+console.log(arr)
+//shift()
+arr.shift()
+console.log(arr)
 
+//--------------------question type methods------------------------>
+
+console.log(arr.includes(9))
+console.log(arr.indexOf(3))
+console.log(arr[9])
