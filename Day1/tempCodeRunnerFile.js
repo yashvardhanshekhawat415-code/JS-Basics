@@ -1,1 +1,3 @@
-console.log(ex1.padStart('15' , 'l'));
+console.log(Number.isInteger("2"));
+console.log(Number.isInteger(2));
+console.log(Number.isInteger(2.99));
