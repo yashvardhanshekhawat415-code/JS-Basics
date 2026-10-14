@@ -1,5 +1,7 @@
 
-//datatype can be changed dynamically and are declared dynamically
+/*Copied by value = you get a separate copy of the data.
+Reference to an object = you get access to the same object
+datatype can be changed dynamically and are declared dynamically*/
 let message = "hello"
 message = 12345
 let n = 1234
@@ -11,7 +13,7 @@ console.log(1/0)
 //(NaN-remember) undefined - any other function on nan gives nan
 console.log("abc"/2)
 console.log("abc"/2*25)
-console.log(NaN+5)
+console.log(NaN*5)
 
 //String even when is primitive, js temporarily converts it into a string object to use these props - AUTOBOXING
 let momo = "lets do it";
@@ -24,7 +26,7 @@ let a = typeof(person_name);
 console.log(a);
 // strings are immutable they cannot change , if you want to modify them then store the value somewhere
 person_name = person_name.toUpperCase();
-console.log(person_name);
+console.log(person_name); //toUpperCase() creates a new string "ARJUN", and because person_name was declared with let, the variable is reassigned to the new string.
 console.log(typeof(person_name));
 console.log(person_name.toUpperCase());
 console.log(person_name); 

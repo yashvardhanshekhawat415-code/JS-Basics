@@ -3,7 +3,7 @@
 const name = "Arjun";
 let age = 25;
 const price = 11.99; // const has to be initialized directly otherwise error shows
- age = 26;
+age = 26;
 let hobbies = ["gaming", "fighting", "dancing"];
 console.log(hobbies); 
 console.log(hobbies[0]);
