@@ -7,7 +7,7 @@ age = 26;
 let hobbies = ["gaming", "fighting", "dancing"];
 console.log(hobbies); 
 console.log(hobbies[0]);
-// constants- thses values cannot be changed
+// constants- these values cannot be changed
 const sex = "good"
 console.log(sex) 
 //uppercase constants - for values that are known and do not change
@@ -40,7 +40,7 @@ console.log(my);
 console.log(yours);
 /*This is one of the most important concepts in JavaScript.
 For primitive values (number, string, boolean, null, undefined, bigint, symbol), assignment copies the value.
-the variable d i not pointing to c but copies the value of c and store it.
+the variable d is not pointing to c but copies the value of c and store it.
 c------> 10
 d------>c wrong
 d------>10 right

@@ -9,6 +9,8 @@ console.log(typeof(var2));
 console.log(1/0);
 console.log('abc'/1);
 let x = 11, y = 2 , z;
+console.log(z);//undefined 
+console.log(typeof z);//undefined
 x=5;
 y=6;
 z = x + y;

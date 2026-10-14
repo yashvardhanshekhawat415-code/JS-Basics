@@ -21,7 +21,7 @@ console.log(g);
 console.log(h);
 // isNaN() function
 let ans = 100/ "apple";
-console.log(isNaN(ans));
+console.log(Number.isNaN(ans));
 console.log(typeof(ans));
 // == and ===
 let ab = 12;
@@ -34,7 +34,7 @@ let num2 = num**2;
 let xx = Math.pow(num,2);
 console.log(num2);
 console.log(xx);
-//Number utility methods Number(), parseInt(), parseFloat(), toFixed(), Number.isInteger()
+//Number utility methods Number(), parseInt(), parseFloat(), toFixed(), Number.isInteger(), Math.floor()
 
 let goku = '42aba';
 console.log(Number(goku)); // NaN as it tries to convert it but fails
