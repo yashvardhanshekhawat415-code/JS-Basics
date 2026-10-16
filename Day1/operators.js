@@ -52,3 +52,6 @@ else{
 if("false"){ // this is not an empty string so it is converted into true
     console.log("fuck off");
 }
+const sentence = "The quick brown fox jumps over the lazy dog"
+let word = "brown"
+console.log(`The word ${word} ${sentence.includes(word) ? "is" : "is not"} in the Sentence.`)//using ternary operator

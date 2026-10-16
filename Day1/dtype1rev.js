@@ -13,7 +13,7 @@ const room; const must be initialized immidiately
 room = 214;
 console.log(room);
 */
-console.log(typeof(NaN));//number
+console.log(typeof(NaN));//number -  It is also the only value in JavaScript that is not equal to itself.
 console.log(typeof typeof 5)//string
 let person_name = "Arjun";
 person_name = person_name.toUpperCase();
