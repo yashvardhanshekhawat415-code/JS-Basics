@@ -1,4 +1,6 @@
 //.test()--> test asks “does this pattern appear in the string?” and gives back true or false.
+
+
 const pattern = /cat/i // i Makes it case-insensitivs
 console.log(pattern.test("I have a cat"))//true
 console.log(pattern.test("I have a dog"))//False
@@ -7,7 +9,7 @@ console.log(pattern.test("concatenate"))//true because it just searches for this
 
 //anchors  ^ --> starts here : $ --> ends here
 console.log(/^cat/.test("cat food"))///^cat/ means the string must START with cat.
-console.log(/^cat/.test("my cat"))
+console.log(/^cat/.test("my cat"))//false
 console.log(/cat$/.test("my cat")) ///cat$/ means the string must END with cat
 console.log(/^cat$/.test("cat")) 
 console.log(/^cat$/.test("cat food"))
@@ -20,7 +22,7 @@ console.log(/^\d$/.test("77"))//false
 console.log(/^\d$/.test("a"))//false
 
 
-//+ : +: one or more. It also applies to the thing right before it.
+// +: one or more. It also applies to the thing right before it.
 console.log(/^\d+$/.test("76889"))//\d+ means one digit, or two, or a hundred, with no upper limit but at least one.
 console.log(/^\d+$/.test("1"))//true
 console.log(/^\d+$/.test(""))//false
@@ -45,3 +47,19 @@ console.log(/^[a-z]+$/.test("hello"))//true
 console.log(/^[a-z]+$/.test("hello boy"))//false--> A space is not in a-z, so the match breaks there.
 console.log(/^[a-z]+$/.test("Hello"))// False -->Beacuse of capital H
 console.log(/^[a-zA-Z]+$/.test("Hello"))// True
+//example
+console.log(/^[6789]\d{9}$/.test("9876543210"))
+
+
+// match: pulling text out instead of checking yes/no
+console.log("Order 69 shipped on 22 Oct".match(/\d/)) // output is shown like this withot g
+/*[
+    '6',
+    index: 6,
+    input: 'Order 69 shipped on 22 Oct',
+    groups: undefined
+  ] */
+console.log("Order 69 shipped on 22 Oct".match(/\d+/))
+console.log("Order 69 shipped on 22 Oct".match(/\d+/g))//[ '69', '22' ] with g
+console.log("there are no numbers".match(/\d+/g))//null
+console.log("cat, Cat , CAT".match(/cat/gi))// ["cat" ,"Cat", "CAT"]

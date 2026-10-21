@@ -1,1 +1,1 @@
-console.log(/\d/.test("7896"))
+console.log(/^[6789]\d{9}$/.test("9876543210"))
