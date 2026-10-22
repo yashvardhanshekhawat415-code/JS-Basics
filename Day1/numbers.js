@@ -34,6 +34,7 @@ let num2 = num**2;
 let xx = Math.pow(num,2);
 console.log(num2);
 console.log(xx);
+
 //Number utility methods Number(), parseInt(), parseFloat(), toFixed(), Number.isInteger(), Math.floor()
 
 let goku = '42aba';
@@ -42,12 +43,14 @@ console.log(Number('42'));
 console.log(Number(''));
 console.log(Number('true'));
 console.log(Number(true));
+
 //paresInt()
 let vegeta = '42abC';
 let result1 = parseInt(vegeta);
 console.log(result1);
 console.log(parseInt('3.99')); // cannot work with decimal
-console.log(parseInt('xyz42'));// not starting with integer
+console.log(parseInt('xyz42'));// not starting with integer it only works if you start with an number
+
 //parseFloat()
 console.log(parseFloat('42.139ab'));
 //toFixed(n)
@@ -57,3 +60,12 @@ console.log(price.toFixed(2));
 console.log(Number.isInteger("2"));
 console.log(Number.isInteger(2));
 console.log(Number.isInteger(2.99));
+
+//Floating Point Limitations
+/*0.5 and 0.25 have exact, finite binary representations, so their sum is exactly 0.75.
+0.1 and 0.2 have repeating binary representations, so JavaScript stores close approximations. Adding them produces 0.30000000000000004. */
+
+console.log(0.2 + 0.3)// 0.5
+console.log(0.2 + 0.1)// 0.30000000000000004
+console.log(0.2 + "0.3")// 0.20.3
+console.log(0.25 + 0.5)// 0.75
