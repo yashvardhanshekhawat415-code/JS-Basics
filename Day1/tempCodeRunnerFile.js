@@ -1,1 +1,2 @@
-console.log(parseInt("42.9",))
+console.log(b);// reference error
+let b = 22;

@@ -1,4 +1,10 @@
 
+console.log(crazy); // undefined as var allows access to the variable before its assignment.
+var crazy = 10;
+
+console.log(b);// reference error as let does not 
+let b = 22;
+
 /*Copied by value = you get a separate copy of the data.
 Reference to an object = you get access to the same object
 datatype can be changed dynamically and are declared dynamically*/

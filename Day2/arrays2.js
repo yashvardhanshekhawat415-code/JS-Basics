@@ -11,18 +11,20 @@ console.log(arr)
 //unshift(element)--->adds the element at the start of the array
 arr.unshift(0)
 console.log(arr)
-//shift()
+//shift()--->removes from the front
 arr.shift()
 console.log(arr)
 
 //join()---> return the elements of the array as string seperated by commas ,
-console.log(arr.join())
+console.log(arr.join())// 1,2,3,4,5
+console.log(typeof arr.join())// string
 
 //--------------------question type methods------------------------>
 
-console.log(arr.includes(9))
-console.log(arr.indexOf(3))
-console.log(arr[9])
+console.log(arr.includes(9))// false
+console.log(arr.indexOf(3))// 2
+console.log(arr.indexOf(88))// -1
+console.log(arr[9])// undefined
 
 //---------------------slice() and splice()------------------------->
 //slice()---> give me a copy of that part
